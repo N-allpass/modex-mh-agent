@@ -1,0 +1,30 @@
+# 占位展示仓库 — 只应包含文档
+# 防止误拷入任何敏感 / 构建产物
+
+# 依赖与构建
+node_modules/
+__pycache__/
+*.py[cod]
+dist/
+build/
+
+# 敏感文件(双保险,占位仓库本就不该有源码)
+.env
+**/.env
+*.key
+*.pem
+license.json
+*.enc
+
+# 运行时数据
+*.db
+*.db-shm
+*.db-wal
+*.sqlite*
+*.log
+
+# 系统 / 编辑器
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
